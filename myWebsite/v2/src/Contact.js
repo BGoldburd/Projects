@@ -18,7 +18,7 @@ class Contact extends Component {
                         <p>To view my LinkedIn profile, please click <a href="https://www.linkedin.com/in/benjamin-goldburd-786799163/" rel="noopener noreferrer" target="_blank">here</a>.</p>
                     </div>
                     <div className="pb-3 pt-3">
-                        <p>To view my Github repository, please click <a href="https://github.com/BGoldburd/PCS-Class" rel="noopener noreferrer" target="_blank">here</a>.</p>
+                        <p>To view my Github repository, please click <a href="https://github.com/BGoldburd/Projects" rel="noopener noreferrer" target="_blank">here</a>.</p>
                     </div>
                     <div id="spacerDiv"></div>
                 </div>
