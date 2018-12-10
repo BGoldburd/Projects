@@ -1,0 +1,116 @@
+.navbar {
+    min-height: 65px;
+}
+h1 {
+    text-shadow: 2px 2px 2px gray;
+    font-size: 3.5em;
+    position: fixed;
+    color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    margin-left: -396px;
+}
+#photosContainer {
+    /* margin-top: 51px; */
+    margin-top: 65px;
+}
+/* img {
+    width: 33.33%;
+    float: left;
+} */
+#photosContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+}
+figure:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+#initialPhoto {
+    /* grid-column: span 3; */
+    position: fixed;
+    left: 0;
+}
+img {
+    width: 100%;
+}
+h3 {
+    font-size: 1.1rem;
+}
+.navbar-brand {
+    font-size: 1.6em;
+    font-family: Righteous, cursive;
+    color: darkblue !important;
+}
+#carouselContainer {
+    position: fixed;
+    top: 0;
+    z-index: 1031;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#carouselExampleControls {
+    width: 80%;
+    height: 70%;
+}
+.carousel-inner, .carousel-item {
+    height: 100%;
+    text-align: center;
+}
+#carouselContainer img {
+    width: auto;
+    height: 100%;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    #initialPhoto {
+        height: 100%;
+    }
+    h1 {
+        text-shadow: 2px 2px 2px gray;
+        font-size: 3.5em;
+        position: fixed;
+        color: whitesmoke;
+        top: 60%;
+        padding: 30px;
+        margin-left: initial;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #initialPhoto {
+        width: 100%;
+    }
+    #photosContainer {
+        grid-template-columns: 1fr;
+    }
+    #searchButton {
+        width: 100%;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    #initialPhoto {
+        height: 100%;
+        width: unset;
+    }
+    #navContainer {
+        justify-content: center;
+    }
+    .navbar-brand {
+        margin: 0;
+        padding: 0px;
+        font-size: 1.4em;
+    }
+}

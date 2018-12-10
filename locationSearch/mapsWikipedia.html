@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="mapsWikipedia.css">
+    <title>BG's Cool Places</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light fixed-top" style="background-color: #b4fcaa;">
+        <div id="navContainer" class="container">
+            <a class="navbar-brand">BG's Cool Places</a>
+            <form class="form-inline">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search Places" aria-label="Search">
+                <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="mapContainer">
+        <div class="listContainer">
+            <section class='list'>
+                <ul></ul>
+            </section>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu58_KMd9hp7oF8dmVPtCoF_bAr00Snzk&callback=initMap&libraries=drawing"></script>
+    <script src="mapsWikipedia.js"></script>
+</body>
+
+</html>

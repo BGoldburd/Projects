@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Photo Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+        <div id="navContainer" class="container">
+            <a class="navbar-brand">Photo Search</a>
+            <form class="form-inline">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search Photos" aria-label="Search">
+                <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="carouselContainer">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="carouselImage">              
+                </div>
+            </div>
+            <span class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </span>
+            <span class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </span>
+        </div>
+    </div>
+    <div id="photosContainer" class="container">
+        <img id="initialPhoto"/>
+        <h1>Explore millions of photos!</h1>
+    </div>
+</body>
+
+</html>

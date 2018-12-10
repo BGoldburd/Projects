@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BG's Blog</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 100px;
+        }
+        header {
+            padding: 5px 0;
+            background-color: lavender;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0px 10px 20px lightgrey;
+        }
+        #headerDiv {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #headerDiv h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .userSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .userSection div {
+            width: 40%;
+        }
+        section:not(.comment) {
+            border-bottom: 1px solid lightgrey;
+            padding-bottom: 10px;
+        }
+        section h2, button {
+            cursor: pointer;
+        }
+        section button {
+            margin-top: 8px;
+        }
+        button {
+            padding: 7px 16px;
+            background-color: #7ab0ec;
+            color: white;
+            border: none;  
+            border-radius: 4px;
+            outline: none;
+        }
+        #prevNext {
+            display: none;
+            justify-content: space-between;
+            width: 60%;
+            margin: 0 auto;
+            padding: 10px 50px;
+        }
+        #prevNext a {
+            text-decoration: unset;
+        }
+        #prev, #next {
+            cursor: pointer;
+        }
+        #prev {
+            display: none;
+        }
+        .comments {
+            display: none;
+            color: darkblue;
+            margin-left: 25px;
+        }
+        .addComment {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            padding: 0 20px 20px;
+            margin-top: 10px;
+            background-color: #eeeeee;
+        }
+        .addComment input{
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .addComment textarea {
+            height: 150px;
+            margin-top: 15px;
+        }
+        .addComment button {
+            align-self: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <h1>BG's Blog</h1>
+            <button id="homeButton">Home</button>
+        </div>
+    </header>
+    <article></article>
+    <div id="prevNext">
+        <div>
+            <a href="#" id="prev" class="arrow">&lsaquo; prev</a>
+        </div>
+        <div>
+            <a href="#" id="next" class="arrow">next &rsaquo;</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

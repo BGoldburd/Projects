@@ -1,0 +1,101 @@
+.navbar {
+    min-height: 65px;
+    box-shadow: 2px 2px 2px gray;
+}
+.navbar-brand {
+    font-size: 1.6em;
+    font-family: cursive;
+    font-weight: bold;
+    color: darkblue !important;
+}
+html, body, #map, #mapContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#mapContainer, .listContainer {
+    padding-top: 65px;
+}
+
+
+.listContainer {
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px lightgrey;
+    z-index: 1;
+    display: none;
+    width: 20%;
+    height: 100%;
+    vertical-align: top;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    height: 100%;
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 12px;
+}
+
+li {
+    padding: 10px 40px 20px;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+li img {
+    width: 100%;
+    margin-top: 3px;
+}
+
+li img:hover {
+    box-shadow: 4px 4px 4px gray;
+}
+
+article {
+    margin-top: 8px;
+    font-size: .8em;
+}
+
+.markerImage {
+    height: 82px;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+article {
+    display: none;
+}
+
+#centerControlDiv, #centerControlDiv2 {
+    top: 5px !important;
+    margin-right: 4px;
+}
+
+#centerControlDiv2 {
+    display: none;
+}
+
+#exitSpan {
+    padding: 4px 10px;
+    border-left: 1px solid grey;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: cursive;
+}
