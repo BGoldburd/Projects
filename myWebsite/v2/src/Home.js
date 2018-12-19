@@ -4,7 +4,6 @@ import $ from 'jquery';
 
 
 class Home extends Component {
-    state = {  }
 
     //for IE support
     componentDidMount () {
