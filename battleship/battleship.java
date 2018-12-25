@@ -19,7 +19,7 @@ import java.util.logging.Logger;
  *
  * @author Binyomin
  */
-public class HW8 {
+public class Battleship {
 
     /**
      * @param args the command line arguments
